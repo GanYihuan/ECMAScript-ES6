@@ -1,1 +1,1 @@
-# ECMASCript-ES6
+# ECMAScript-ES6
