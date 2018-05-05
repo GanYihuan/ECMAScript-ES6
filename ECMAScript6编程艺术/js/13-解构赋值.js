@@ -12,13 +12,16 @@ console.log(a); // 1
 console.log(b); // 2
 console.log(c); // 3
 
+
 let [foo, [[bar], base]] = [1, [[2], 3]];
 console.log(foo); // 1
 console.log(bar); // 2
 console.log(base); // 3
 
+
 let [, , third] = ["first", "second", "third"];
 console.log(third); // third
+
 
 let [head, ...tail] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 console.log(head); // 0

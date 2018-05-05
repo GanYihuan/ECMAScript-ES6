@@ -15,6 +15,7 @@ console.log("person number: " + jsonData.score[0]); // 98
 console.log("person number: " + jsonData.score[1]); // 148
 console.log("person number: " + jsonData.job.doctor); // 120
 
+
 console.log("es6: ");
 let { id: number, name, job: job } = jsonData;
 console.log(number); // 007

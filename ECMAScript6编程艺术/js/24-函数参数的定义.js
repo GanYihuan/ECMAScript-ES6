@@ -6,6 +6,7 @@ function fun([x, y, z]) {
 }
 fun([100, 200, 300]);
 
+
 // 参数是一组无序的值
 function run({ id, name, age }) {
   // id = '007';

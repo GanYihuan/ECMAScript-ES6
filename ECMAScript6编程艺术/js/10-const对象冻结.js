@@ -4,7 +4,7 @@ const person = Object.freeze({
   age: "20"
 });
 // Can't assign value below
-person.name = "lisi";
+person.name = "liSi";
 person.age = 30;
 console.log(person.name); // zs
 console.log(person.age); // 30

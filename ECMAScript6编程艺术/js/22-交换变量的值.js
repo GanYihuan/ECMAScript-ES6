@@ -15,6 +15,7 @@ console.log("a= " + a);
 console.log("b= " + b);
 // after: a = 200 b = 100
 
+
 // ES6
 console.log("ES6:");
 var x = 100;

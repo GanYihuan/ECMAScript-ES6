@@ -7,6 +7,7 @@ console.log(x); // 1
 console.log(y); // 2
 console.log(z); // 3
 
+
 function run() {
   return {
     id: "007",
@@ -18,6 +19,7 @@ var { id, name, age } = run();
 console.log(id); // 007
 console.log(name); // Conan
 console.log(age); // 28
+
 
 var { id: person_id, name: person_name, age: person_age } = run();
 console.log(person_id); // 007

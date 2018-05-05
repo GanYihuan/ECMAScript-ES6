@@ -18,4 +18,4 @@ arr.length = 0;
 console.log(arr);
 console.log(arr.length); // 0
 console.log("-----");
-arr = ["hi"]; // arr is read-only, error!
+// arr = ["hi"]; // arr is read-only, error!
