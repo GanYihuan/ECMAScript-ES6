@@ -1,6 +1,6 @@
 'use strict';
 
-// 迭代器 - Iterators.mp4
+// 22.迭代器 - Iterators
 function chef(foods) {
   let i = 0;
   return {
@@ -21,7 +21,7 @@ console.log(wangHao.next()); // b
 console.log(wangHao.next()); // undefined
 
 
-// 生成器 - Generators.mp4
+// 23.生成器 - Generators
 let chef2 = function* (foods) {
   for (let i = 0; i < foods.length; i++) {
     yield foods[i];

@@ -8,10 +8,12 @@ function dinner(fruit, dessert) {
 }
 
 
+// A
 // rename: dinner as supper
 export {fruit, dessert, dinner as supper}
 
 
+// C
 // export default function sex(fruit, dessert) {
 //    console.log(`dinner it's ${fruit} and ${dessert}`);
 // }

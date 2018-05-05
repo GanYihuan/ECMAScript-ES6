@@ -6,14 +6,16 @@ let breakfast = 'Today breakfast it is ' + dessert + ' and ' + drink + ' !';
 console.log(breakfast);
 
 
+// 6.模版字符串-Template Strings
 // es6
-let breakfast2 = `Today breakfast it is \n ${dessert} and ${drink} !`;
-// methods
-console.log(breakfast2.startsWith('T'));
-console.log(breakfast2.endsWith('!'));
-console.log(breakfast2.includes('i'));
+let breakfast2 = `Today breakfast it is ${dessert} and ${drink} !`;
+// 8.判断字符串里是否包含其他字符串
+console.log(breakfast2.startsWith('T')); // true
+console.log(breakfast2.endsWith('!')); // true
+console.log(breakfast2.includes('i')); // ture
 
 
+// 7.带标签的模版字符串-Tagged Templates
 // carry Tags template strings
 let breakfast3 = kitchen`Today breakfast it is ${dessert} and ${drink} !`;
 
@@ -32,7 +34,7 @@ function kitchen(strings, ...values) {
 console.log(breakfast3);
 
 
-// default value
+// 9.默认参数 - Default Parameter Values
 function breakfast4(dessert = 'A', drink = 'B') {
   return `${dessert} ${drink}`;
 }

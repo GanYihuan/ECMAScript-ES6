@@ -23,18 +23,24 @@ class Chef {
   }
 }
 
+
+// 24.Classes - 类
 let wangHao = new Chef('a');
 wangHao.cook(); // a
 
+
+// 25.get 与 set
 let wangHao2 = new Chef();
 console.log(wangHao2.menu = 'b'); // b
 console.log(wangHao2.menu = 'c'); // c
 console.log(wangHao2.menu); // ['b', 'c']
 
+
+// 26.静态方法-static
 Chef.cook2('d'); // d
 
 
-// extends
+// 27.extends
 class Person {
   constructor(name, birthday) {
     this.name = name;

@@ -1,6 +1,6 @@
 'use strict';
 
-// Destructured Parameters
+// 12.解构参数 - Destructured Parameters
 /**
  *
  * @param dessert: need

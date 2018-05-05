@@ -5,6 +5,7 @@ let breakfast = function breakfast(dessert) {
 };
 
 
+// 14.箭头函数-Arrow Functions
 // es6
 let breakfast2 = (dessert, drink) => {
   return dessert + drink

@@ -6,12 +6,13 @@
 }
 console.log(food);
 
+
 const food = 'bear';
 console.log(food);
-
 // const: can't change
 const food = 'finish';
 console.log(food);
+
 
 const food = [];
 food.push('apple');
