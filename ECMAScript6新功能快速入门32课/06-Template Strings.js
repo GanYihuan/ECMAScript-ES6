@@ -1,13 +1,18 @@
 'use strict';
 
 let dessert = 'a', drink = 'b';
-let breafast = 'Today breakfast it is ' + dessert + ' and ' + drink + ' !';
-// es6
-let breafast2 = `Today breakfast it is \n ${dessert} and ${drink} !`;
+// es5
+let breakfast = 'Today breakfast it is ' + dessert + ' and ' + drink + ' !';
+console.log(breakfast);
 
-console.log(breafast2.startsWith('T'));
-console.log(breafast2.endsWith('!'));
-console.log(breafast2.includes('i'));
+
+// es6
+let breakfast2 = `Today breakfast it is \n ${dessert} and ${drink} !`;
+// methods
+console.log(breakfast2.startsWith('T'));
+console.log(breakfast2.endsWith('!'));
+console.log(breakfast2.includes('i'));
+
 
 // carry Tags template strings
 let breakfast3 = kitchen`Today breakfast it is ${dessert} and ${drink} !`;
@@ -25,3 +30,11 @@ function kitchen(strings, ...values) {
 }
 
 console.log(breakfast3);
+
+
+// default value
+function breakfast4(dessert = 'A', drink = 'B') {
+  return `${dessert} ${drink}`;
+}
+
+console.log(breakfast4('a', 'b'));
