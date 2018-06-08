@@ -1,0 +1,26 @@
+# 兼容性
+
+[兼容性1](http://kangax.github.io/compat-table/es5/)
+[兼容性2](http://kangax.github.io/compat-table/es6/)
+
+> ES6(ES2015)——IE10+、Chrome、FireFox、移动端、NodeJS
+
+## 编译、转换
+
+1. 在线转换
+2. 提前编译
+
+babel==browser.js
+
+------------------------------------------------------------------------------
+
+## ES6：
+
+1. 变量
+2. 函数
+3. 数组
+4. 字符串
+5. 面向对象
+6. Promise
+7. generator
+8. 模块化
