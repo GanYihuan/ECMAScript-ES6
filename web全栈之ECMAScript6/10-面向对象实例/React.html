@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>test</title>
     <script src="react.js" charset="utf-8"></script>
     <script src="react-dom.js" charset="utf-8"></script>
     <script src="browser.js" charset="utf-8"></script>
@@ -23,11 +23,7 @@
       }
 
       render(){
-        let aItems=[];
-
-        for(let i=0;i<this.props.arr.length;i++){
-          aItems.push(<Item str={this.props.arr[i]}></Item>);
-        }
+        let aItems=this.props.arr.map(a=><Item str={a}></Item>);
 
         return <ul>
           {aItems}
@@ -39,7 +35,7 @@
       let oDiv=document.getElementById('div1');
 
       ReactDOM.render(
-        <List arr={['abc', 'erw', 'sdfasdf', 'dfasdfsdfds']}></List>,
+        <List arr={['a', 'b', 'c', 'd']}></List>,
         oDiv
       );
     };
