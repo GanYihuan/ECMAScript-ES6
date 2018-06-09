@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ES5</title>
+</head>
+<body>
+  <script>
+    let str2='{"a": 12, "b": 5, "c": "abc"}';
+    console.log(JSON.parse(str2));
+
+    let json3={a: 12, b: 5};
+    alert(JSON.stringify(json3));
+
+    let json = {
+      a: 12,
+      b: 5
+    };
+    // encodeURIComponent() 函数可把字符串作为 URI 组件进行编码。
+    let str = 'http://it.kaikeba.com/path/user?data=' + encodeURIComponent(JSON.stringify(json));
+
+    alert(str);
+  </script>
+</body>
+</html>
