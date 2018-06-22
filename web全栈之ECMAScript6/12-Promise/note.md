@@ -52,7 +52,11 @@ let banner_data=ajax_async('/banners');
 
 ### Promise.all
 
+> 全部成功后执行
+
 ### Promise.race
+
+> 谁更快就执行谁
 
 ```js
 Promise.race([

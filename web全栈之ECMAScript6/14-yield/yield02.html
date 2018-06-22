@@ -18,8 +18,10 @@
     let gen = show();
 
     let res1 = gen.next();
+    // value靠yield显示, done=false表示函数未完成
     console.log(res1); // {value: 12, done: false}
     let res2 = gen.next();
+    // 最后结果靠return来显示, 没有return就undefind
     console.log(res2); // {value: 55, done: true}
   </script>
 </body>

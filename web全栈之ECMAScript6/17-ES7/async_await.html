@@ -34,10 +34,9 @@
       console.log(data1, data2, data3);
     });
 
-    // 上下等价
-
     // ES7
-    // 可以使用箭头函数, 不用引入runner.js
+    // 与generator,yield等价
+    // 区别: 可以使用箭头函数, 不用引入runner.js
     let readData = async () => {
       let data1 = await $.ajax({
         url: 'data/1.txt',

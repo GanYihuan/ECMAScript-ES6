@@ -43,7 +43,7 @@ Promise.all([
   $.ajax({url: xxx, dataType: 'json'}),
   $.ajax({url: xxx, dataType: 'json'})
 ]).then(results=>{
-  // 完事儿
+  // 完事
 }, err=>{
   alert('错了');
 });
@@ -55,7 +55,7 @@ runner(function *(){
   let data1=yield $.ajax({url: xxx, dataType: 'json'});
   let data2=yield $.ajax({url: xxx, dataType: 'json'});
   let data3=yield $.ajax({url: xxx, dataType: 'json'});
-  // 完事儿
+  // 完事
 });
 ```
 

@@ -7,43 +7,43 @@
     <script src="react-dom.js" charset="utf-8"></script>
     <script src="browser.js" charset="utf-8"></script>
     <script type="text/babel">
-    class Item extends React.Component{
-      constructor(...args){
-        super(...args);
+      class Item extends React.Component {
+        constructor(...args){
+          super(...args);
+        }
+
+        render() {
+          return <li>{this.props.str}</li>;
+        }
       }
 
-      render(){
-        return <li>{this.props.str}</li>;
+      class List extends React.Component{
+        constructor(...args){
+          super(...args);
+        }
+
+        render(){
+          let aItems = this.props.arr.map(a=><Item str={a}></Item>);
+
+          return <ul>
+            {aItems}
+          </ul>;
+        }
       }
-    }
 
-    class List extends React.Component{
-      constructor(...args){
-        super(...args);
-      }
+      window.onload = function() {
+        let oDiv = document.getElementById('div1');
 
-      render(){
-        let aItems=this.props.arr.map(a=><Item str={a}></Item>);
-
-        return <ul>
-          {aItems}
-        </ul>;
-      }
-    }
-
-    window.onload=function (){
-      let oDiv=document.getElementById('div1');
-
-      ReactDOM.render(
-        <List arr={['a', 'b', 'c', 'd']}></List>,
-        oDiv
-      );
-    };
+        ReactDOM.render(
+          <List arr={['a', 'b', 'c', 'd']}></List>,
+          oDiv
+        );
+      };
     </script>
   </head>
-  <body>
-    <div id="div1">
+<body>
+  <div id="div1">
 
-    </div>
+  </div>
   </body>
 </html>

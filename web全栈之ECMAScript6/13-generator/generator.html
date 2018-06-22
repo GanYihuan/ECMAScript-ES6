@@ -13,6 +13,7 @@
     // generator
     function* show() {
       alert('a');
+      // 暂停
       yield;
       alert('b');
     }
@@ -27,8 +28,8 @@
 
     let genObj = show();
 
-    genObj.next(); // show_1
-    genObj.next(); // show_2
+    genObj.next(); // 执行show_1
+    genObj.next(); // 执行show_2
   </script>
 </body>
 
