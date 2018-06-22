@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>算个总数</title>
+  <title>算总数</title>
 </head>
 <body>
   <!-- reduce.png -->
   <script>
     let arr = [12, 69, 180, 8763];
+    // a: 中间结果
     let result = arr.reduce(function (tmp, item, index) {
       // alert(tmp+','+item+','+index);
       return tmp + item;
