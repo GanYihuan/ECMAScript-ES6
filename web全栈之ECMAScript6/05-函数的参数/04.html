@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>不能赋值</title>
+  <title>收集参数与展开参数</title>
 </head>
+
 <body>
   <script>
-    let a;
-    let arr = [1, 2, 3];
+    // 收集参数
+    function show(...args) {
+      // 展开参数
+      fn(...args);
+    }
 
-    // 不能赋值
-    // a = ...arr;
+    function fn(a, b) {
+      // 17
+      alert(a + b);
+    }
 
-    alert(a);
+    show(12, 5);
   </script>
 </body>
+
 </html>
