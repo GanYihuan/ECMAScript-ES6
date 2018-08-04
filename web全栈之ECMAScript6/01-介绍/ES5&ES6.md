@@ -1,8 +1,8 @@
-# 一、介绍 #
+# 一、介绍
 
-## 1.历史 ##
+## 历史
 
-1. ECMAScript和JavaScript
+- ECMAScript和JavaScript
 - ECMA是标准，JS是实现
 - 类似于HTML5是标准，IE10、Chrome、FF都是实现
 - 换句话说，将来也能有其他XXXScript来实现ECMA
@@ -10,7 +10,8 @@
 - 目前版本
 - 低级浏览器主要支持ES 3.1
 - 高级浏览器正在从ES 5过渡到ES 6
-2. 历史版本
+
+- 历史版本
 
 |时间|ECMA|JS|解释|
 |---|---|---|---|

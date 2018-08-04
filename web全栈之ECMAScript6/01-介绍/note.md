@@ -1,9 +1,0 @@
-# 介绍
-
-ECMAScript≈JS
-
-ECMA
-ES
-
-ECMA6.0
-ES6.0
