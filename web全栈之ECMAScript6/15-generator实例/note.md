@@ -38,15 +38,17 @@ $.ajax({
 
 ```js
 // Promise
-Promise.all([
-  $.ajax({url: xxx, dataType: 'json'}),
-  $.ajax({url: xxx, dataType: 'json'}),
-  $.ajax({url: xxx, dataType: 'json'})
-]).then(results=>{
-  // 完事
-}, err=>{
-  alert('错了');
-});
+Promise
+  .all([
+    $.ajax({url: xxx, dataType: 'json'}),
+    $.ajax({url: xxx, dataType: 'json'}),
+    $.ajax({url: xxx, dataType: 'json'})
+  ])
+  .then(results=>{
+    // 完事
+  }, err=>{
+    alert('错了');
+  });
 ```
 
 ```js
@@ -82,32 +84,34 @@ $.ajax({url: 'getUserData', dataType: 'json', success(userData){
 
 ```js
 // 带逻辑-Promise
-Promise.all([
-  $.ajax({url: 'getUserData', dataType: 'json'})
-]).then(results=>{
-  let userData=results[0];
-  if(userData.type=='VIP'){
-    Promise.all([
-      $.ajax({url: 'getVIPItems', dataType: 'json'})
-    ]).then(results=>{
-      let items=results[0];
-      // 生成列表、显示...
-    }, err=>{
-      alert('错了');
-    });
-  }else{
-    Promise.all([
-      $.ajax({url: 'getItems', dataType: 'json'})
-    ]).then(results=>{
-      let items=results[0];
-      // 生成列表、显示...
-    }, err=>{
-      alert('错了');
-    });
-  }
-}, err=>{
-  alert('失败');
-});
+Promise
+  .all([
+    $.ajax({url: 'getUserData', dataType: 'json'})
+  ])
+  .then(results=>{
+    let userData=results[0];
+    if(userData.type=='VIP'){
+      Promise.all([
+        $.ajax({url: 'getVIPItems', dataType: 'json'})
+      ]).then(results=>{
+        let items=results[0];
+        // 生成列表、显示...
+      }, err=>{
+        alert('错了');
+      });
+    }else{
+      Promise.all([
+        $.ajax({url: 'getItems', dataType: 'json'})
+      ]).then(results=>{
+        let items=results[0];
+        // 生成列表、显示...
+      }, err=>{
+        alert('错了');
+      });
+    }
+  }, err=>{
+    alert('失败');
+  });
 ```
 
 ```js

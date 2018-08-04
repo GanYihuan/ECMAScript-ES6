@@ -1,10 +1,10 @@
-# ES7 & ES8预览
+# ES7 & ES8 预览
 
-## 数组  includes
+## 数组 includes
 
 > 数组是否包含某个东西
 
-## 数组  keys/values/entries
+## 数组 keys/values/entries
 
 ```js
                   数组          json
@@ -20,18 +20,18 @@
 ## 幂
 
 ```js
-alert(3 ** 8);
+alert(3 ** 8)
 ```
 
 ## startsWith/endsWith
 
 ## padStart/padEnd
 
+- 语法容忍度
+
 ```js
-语法容忍度
 ES6
 [12,6,8] => [12,6,8,]
-
 ES7
 function show(a,b,c,) {}
 ```
@@ -40,5 +40,5 @@ function show(a,b,c,) {}
 
 ## async await
 
-1. 不依赖于外部的runner了——统一、性能
-2. 可以用箭头函数
+- 不依赖于外部的 runner 了——统一、性能
+- 可以用箭头函数

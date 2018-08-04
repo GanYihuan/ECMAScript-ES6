@@ -7,6 +7,8 @@
   <title>Document</title>
   <script src="runner.js" charset="utf-8"></script>
   <script src="jquery.js" charset="utf-8"></script>
+</head>
+<body>
   <script>
     runner(function* () {
       let data1 = yield $.ajax({
@@ -21,12 +23,8 @@
         url: 'data/3.txt',
         dataType: 'json'
       });
-
       console.log(data1, data2, data3);
     });
   </script>
-</head>
-<body>
-  
 </body>
 </html>

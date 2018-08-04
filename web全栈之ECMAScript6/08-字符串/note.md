@@ -2,14 +2,12 @@
 
 ## 多了两个新方法
 
-1. startsWith
-2. endsWith
+- startsWith
+- endsWith
 
 ## 字符串模板
 
-字符串连接
-
-  i.直接把东西塞到字符串里面      ${东西}
-  ii.可以折行
-
-it.kaikeba.com
+- 字符串连接
+- i.直接把东西塞到字符串里面 ${东西}
+- ii.可以折行
+- it.kaikeba.com

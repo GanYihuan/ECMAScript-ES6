@@ -2,13 +2,13 @@
 
 ## 普通函数——一路到底
 
-## generator函数——中间能停
+## generator 函数——中间能停
 
 ```js
-function 函数(){
-  代码...
+function name(){
+  ...
   ajax(xxx, function (){
-    代码...
+    ...
   });
 }
 ```
@@ -16,9 +16,12 @@ function 函数(){
 ## yield
 
 ```js
-function *函数(){
-  代码...
+function* name(){
+  codeA...
   yield ajax(xxx);
-  代码...
+  codeB...
 }
+let a = name()
+a.next() // codeA run
+a.next() // codeB run
 ```

@@ -7,10 +7,10 @@
   <title>Document</title>
   <script src="runner.js" charset="utf-8"></script>
   <script>
-    async function show() { 
+    async function show() {
       alert('a')
       await
-      alert('b')
+        alert('b')
     }
   </script>
 </head>
@@ -37,6 +37,8 @@
     // ES7
     // 与generator,yield等价
     // 区别: 可以使用箭头函数, 不用引入runner.js
+    // 1: * -> aysnc() => {}
+    // 2: yield -> await
     let readData = async () => {
       let data1 = await $.ajax({
         url: 'data/1.txt',
@@ -52,7 +54,6 @@
       });
       console.log(data1, data2, data3);
     }
-
     readData();
   </script>
 </body>

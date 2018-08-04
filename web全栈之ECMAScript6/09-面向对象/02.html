@@ -13,7 +13,6 @@
         this.name = name;
         this.pass = pass;
       }
-
       showName() {
         alert(this.name);
       }
@@ -21,21 +20,17 @@
         alert(this.pass);
       }
     }
-
     class VipUser extends User {
       constructor(name, pass, level) {
         // 执行父类方法
         super(name, pass);
         this.level = level;
       }
-
       showLevel() {
         alert(this.level);
       }
     }
-
     let v1 = new VipUser('blue', '123456', 3);
-
     v1.showName();
     v1.showPass();
     v1.showLevel();

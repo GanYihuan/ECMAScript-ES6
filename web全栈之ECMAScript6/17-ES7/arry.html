@@ -18,9 +18,7 @@
     entries=>所有的key-value对拿出来    {key: 0, value: 12}, {key: 1, value: 5}, ...
       *entry实体
     */
-
     let arr = [12, 5, 8, 99, 31];
-
     // includes: 数组是否包含某个东西
     alert(arr.includes(8)); // true
 
@@ -36,22 +34,26 @@
       alert(i);
     }
 
+    // keys=>所有的key拿出来
     for (let key of arr.keys()) {
       // 0,1,2,3,4
       alert(key);
     }
 
+    // values=>所有的values拿出来
     for (let value of arr.values()) {
       // 12,5,8,99,31
       alert(value);
     }
 
-    for(let entry of arr.entries()){
+    // entries=>所有的key-value对拿出来
+    for (let entry of arr.entries()) {
       // {key: 0, value: 12}, {key: 1, value: 5}, ...
       alert(entry);
     }
 
-    for(let [key, value] of arr.entries()){
+    // entries=>所有的key-value对拿出来
+    for (let [key, value] of arr.entries()) {
       alert(`${key}=${value}`);
     }
   </script>

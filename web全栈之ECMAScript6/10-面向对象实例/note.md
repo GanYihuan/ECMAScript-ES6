@@ -2,8 +2,8 @@
 
 ## React
 
-1. 组件化——class
-2. JSX
+- 组件化——class
+- JSX
 
 > JSX==babel==browser.js
-> JSX   JS扩展版
+> JSX JS 扩展版
