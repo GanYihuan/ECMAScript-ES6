@@ -14,14 +14,12 @@
       alert('b');
       return 55;
     }
-
     let gen = show();
-
     let res1 = gen.next();
-    // value靠yield显示, done=false表示函数未完成
+    // value 靠 yield 显示, done=false 表示函数未完成
     console.log(res1); // {value: 12, done: false}
     let res2 = gen.next();
-    // 最后结果靠return来显示, 没有return就undefind
+    // 结果靠 return 来显示, 没有 return 就 undefind
     console.log(res2); // {value: 55, done: true}
   </script>
 </body>

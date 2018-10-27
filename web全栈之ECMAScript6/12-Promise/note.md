@@ -25,7 +25,7 @@ ajax('/banners', function (banner_data){
 });
 ```
 
-## 有了Promise之后的异步
+## 有了 Promise 之后的异步
 
 ```js
 Promise
@@ -50,11 +50,11 @@ let banner_data=ajax_async('/banners');
 
 > 用同步一样的方式，来书写异步代码
 
-### Promise.all
+## Promise.all
 
 > 全部成功后执行
 
-### Promise.race
+## Promise.race
 
 > 谁更快就执行谁
 

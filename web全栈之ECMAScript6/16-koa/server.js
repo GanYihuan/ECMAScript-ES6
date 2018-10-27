@@ -7,10 +7,9 @@ let db = mysql.createPool({
 	password: '123456',
 	database: '20170702'
 })
-
 let server = new koa()
 
-// koa废弃了generator
+// koa 废弃了 generator
 server.use(function*() {
 	let data = yield db.query(`SELECT * FROM user_table`)
 	this.body = data

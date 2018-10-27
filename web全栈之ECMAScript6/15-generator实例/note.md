@@ -18,7 +18,7 @@ $.ajax({
           url: xxx,
           dataType: 'json'
           success(data3){
-            //完事儿
+            // 完事儿
           },
           error(){
             alert('错了');

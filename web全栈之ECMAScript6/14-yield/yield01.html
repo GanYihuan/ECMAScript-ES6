@@ -10,9 +10,9 @@
   <script>
     // function *炒菜(菜市场买回来的){
     //   洗菜->洗好的菜
-    //   let 干净的菜=yield 洗好的菜;
+    //   let 干净的菜 = yield 洗好的菜;
     //   干净的菜->切->丝
-    //   let 切好的菜=yield 丝;
+    //   let 切好的菜 = yield 丝;
     //   切好的菜->炒->熟的菜
     //   return 熟的菜;
     // }
@@ -20,16 +20,13 @@
       alert(`${num1}, ${num2}`);
       alert('a');
       let a = yield;
-      alert('b');
       alert(a); // 5
+      alert('b');
       return;
     }
-
     let gen = show(99, 88);
-
-    // 01.png
-    gen.next(12); // 没法给yield传参
-    gen.next(5);
+    gen.next(12); // 99, 88 -> a, 第一个 next() 没法给 yield 传参
+    gen.next(5); // 5 -> b
   </script>
 </body>
 </html>
