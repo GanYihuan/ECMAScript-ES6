@@ -2,8 +2,8 @@
 
 ## 多了两个新方法
 
-- startsWith
-- endsWith
+- startsWith()
+- endsWith()
 
 ## 字符串模板
 

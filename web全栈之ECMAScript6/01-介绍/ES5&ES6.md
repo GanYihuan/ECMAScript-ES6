@@ -2,14 +2,14 @@
 
 ## 历史
 
-- ECMAScript和JavaScript
-- ECMA是标准，JS是实现
-- 类似于HTML5是标准，IE10、Chrome、FF都是实现
-- 换句话说，将来也能有其他XXXScript来实现ECMA
-- ECMAScript简称**ECMA或ES**
+- ECMAScript 和 JavaScript
+- ECMA 是标准，JS 是实现
+- 类似于 HTML5 是标准，IE10、Chrome、FF 都是实现
+- 换句话说，将来也能有其他 XXXScript 来实现 ECMA
+- ECMAScript 简称 **ECMA或ES**
 - 目前版本
-- 低级浏览器主要支持ES 3.1
-- 高级浏览器正在从ES 5过渡到ES 6
+- 低级浏览器主要支持 ES 3.1
+- 高级浏览器正在从 ES 5 过渡到 ES 6
 
 - 历史版本
 
@@ -19,9 +19,9 @@
 |1998.06|ES 2.0||ES2正式发布|
 |1999.12|ES 3.0||ES3被广泛支持|
 |2007.10|ES 4.0||ES4过于激进，被废了|
-|2008.07|ES 3.1||4.0退化为严重缩水版的3.1<br/>因为吵得太厉害，所以ES 3.1代号为Harmony(和谐)|
-|2009.12|ES 5.0||ES 5.0正式发布<br/>同时公布了JavaScript.next也就是后来的ES 6.0|
+|2008.07|ES 3.1||4.0退化为严重缩水版的3.1 因为吵得太厉害，所以ES 3.1代号为Harmony(和谐)|
+|2009.12|ES 5.0||ES 5.0正式发布 同时公布了JavaScript.next也就是后来的ES 6.0|
 |2011.06|ES 5.1||ES 5.1成为了ISO国际标准|
 |2013.03|ES 6.0||ES 6.0草案定稿|
 |2013.12|ES 6.0||ES 6.0草案发布|
-|2015.06|ES 6.0||ES 6.0预计发布正式版<br/>JavaScript.next开始指向ES 7.0|
+|2015.06|ES 6.0||ES 6.0预计发布正式版JavaScript.next开始指向ES 7.0|
