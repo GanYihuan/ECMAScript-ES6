@@ -1,1 +1,1 @@
-# ECMAScript6编程艺术
+# ECMAScript6 编程艺术
