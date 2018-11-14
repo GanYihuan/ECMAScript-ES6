@@ -1,42 +1,41 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body>
-  <input type="button" value="0">
-  <input type="button" value="1">
-  <input type="button" value="2">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+	</head>
+	<body>
+		<input type="button" value="0" /> <input type="button" value="1" />
+		<input type="button" value="2" />
 
-  <!-- ES5 -->
-  <!-- 
-  <script>
-    window.onload = function () {
-      var aBtn = document.getElementsByTagName('input')
-      for (var i = 0; i < aBtn.length; i++) {
-        (function (i) {
-          aBtn[i].onclick = function () {
-            alert(i)
-          }
-        })(i)
-      }
-    }
-  </script>
-  -->
+		<!-- ES5 -->
+		<!--
+			<script>
+			  window.onload = function () {
+			    var aBtn = document.getElementsByTagName('input')
+			    for (var i = 0; i < aBtn.length; i++) {
+			      (function (i) {
+			        aBtn[i].onclick = function () {
+			          alert(i)
+			        }
+			      })(i)
+			    }
+			  }
+			</script>
+		-->
 
-  <!-- ES6 -->
-  <script>
-    window.onload = function () {
-      var aBtn = document.getElementsByTagName('input')
-      for (let i = 0; i < aBtn.length; i++) {
-        aBtn[i].onclick = function () {
-          alert(i)
-        }
-      }
-    }
-  </script>
-</body>
+		<!-- ES6 -->
+		<script>
+			window.onload = function() {
+				let aBtn = document.getElementsByTagName('input')
+				for (let i = 0; i < aBtn.length; i++) {
+					aBtn[i].onclick = function() {
+						alert(i)
+					}
+				}
+			}
+		</script>
+	</body>
 </html>

@@ -40,5 +40,6 @@ function show(a,b,c,) {}
 
 ## async await
 
+- 与 generator, yield 等价
 - 不依赖于外部的 runner 了——统一、性能
 - 可以用箭头函数

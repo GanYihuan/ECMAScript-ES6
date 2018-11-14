@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>ES5</title>
-</head>
-<body>
-  <script>
-    function User(name, pass) {
-      this.name = name;
-      this.pass = pass;
-    }
-    // 加方法
-    User.prototype.showName = function () {
-      alert(this.name);
-    };
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>ES5</title>
+	</head>
+	<body>
+		<script>
+			function User(name, pass) {
+				this.name = name
+				this.pass = pass
+			}
+			// 加方法
+			User.prototype.showName = function() {
+				alert(this.name)
+			}
 
-    function VipUser(name, pass, level) {
-      User.call(this, name, pass);
-      this.level = level;
-    }
-    VipUser.prototype = new User();
-    VipUser.prototype.constructor = VipUser;
-    VipUser.prototype.showLevel = function () {
-      alert(this.level);
-    };
-    var v1 = new VipUser('blue', 3);
-    v1.showName();
-    v1.showLevel();
-  </script>
-</body>
+			function VipUser(name, pass, level) {
+				User.call(this, name, pass)
+				this.level = level
+			}
+			VipUser.prototype = new User()
+			VipUser.prototype.constructor = VipUser
+			VipUser.prototype.showLevel = function() {
+				alert(this.level)
+			}
+			var v1 = new VipUser('blue', 3)
+			v1.showName()
+			v1.showLevel()
+		</script>
+	</body>
 </html>

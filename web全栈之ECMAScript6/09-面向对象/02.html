@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>ES6</title>
-</head>
-<body>
-  <script>
-    class User {
-      constructor(name) {
-        this.name = name;
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>ES6</title>
+	</head>
+	<body>
+		<script>
+			class User {
+				constructor(name) {
+					this.name = name
+				}
+				showName() {
+					alert(this.name)
+				}
       }
-      showName() {
-        alert(this.name);
+      
+			class VipUser extends User {
+				constructor(name, level) {
+					// 执行父类方法
+					super(name)
+					this.level = level
+				}
+				showLevel() {
+					alert(this.level)
+				}
       }
-    }
-    class VipUser extends User {
-      constructor(name, level) {
-        // 执行父类方法
-        super(name);
-        this.level = level;
-      }
-      showLevel() {
-        alert(this.level);
-      }
-    }
-    let v1 = new VipUser('blue', 3);
-    v1.showName();
-    v1.showLevel();
-  </script>
-</body>
+      
+			let v1 = new VipUser('blue', 3)
+			v1.showName()
+			v1.showLevel()
+		</script>
+	</body>
 </html>
