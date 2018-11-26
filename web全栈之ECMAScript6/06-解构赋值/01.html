@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>解构赋值无效</title>
-	</head>
-	<body>
-		<script>
-			let [a, b] = [12, 45];
-			let { c, d } = { c: 5, d: 6 };
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>解构赋值无效</title>
+  </head>
+  <body>
+    <script>
+      let [a, b] = [12, 45];
+      let { c, d } = { c: 5, d: 6 };
 
-			// 解构无效, 右侧不是合法写法
-			// let {c, d} = { 12, 5 };
-			// 左侧是数组, 右侧是 json, 解构无效
-			// let [a, b] = { a: 12, b: 5};
+      // 解构无效, 右侧不是合法写法
+      // let {c, d} = { 12, 5 };
+      // 左侧是数组, 右侧是 json, 解构无效
+      // let [a, b] = { a: 12, b: 5};
 
-			// 声明初始分开, 解构无效
-			let [c, d];
-			[c, d] = [20, 50];
-			console.log(a, b);
+      // 声明初始分开, 解构无效
+      let [c, d];
+      [c, d] = [20, 50];
+      console.log(a, b);
 
-			// 粒度
-			let [{ a, b }, [n1, n2, n3], num, str] = [{ a: 12, b: 5 }, [12, 5, 8], 8, 'cxzcv'];
-			let [json, arr, num, str] = [{ a: 12, b: 5 }, [12, 5, 8], 8, 'cxzcv'];
-			console.log(json, arr, num, str);
-			console.log(a, b, n1, n2, n3, num, str);
-		</script>
-	</body>
+      // 粒度
+      let [{ a, b }, [n1, n2, n3], num, str] = [{ a: 12, b: 5 }, [12, 5, 8], 8, 'cxzcv'];
+      let [json, arr, num, str] = [{ a: 12, b: 5 }, [12, 5, 8], 8, 'cxzcv'];
+      console.log(json, arr, num, str);
+      console.log(a, b, n1, n2, n3, num, str);
+    </script>
+  </body>
 </html>

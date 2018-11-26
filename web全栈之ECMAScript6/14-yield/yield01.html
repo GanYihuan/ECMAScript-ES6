@@ -24,9 +24,9 @@
 				alert('b')
 				return
 			}
-			let gen = show(99, 88)
-			gen.next(12) // 99, 88 -> a, 第一个 next() 没法给 yield 传参
-			gen.next(5) // 5 -> b
+			let gen = show(99, 88) // 99, 88
+			gen.next(12) // 第一个 next() 没法给 yield 传参
+			gen.next(5) // 5, 'b'
 		</script>
 	</body>
 </html>
