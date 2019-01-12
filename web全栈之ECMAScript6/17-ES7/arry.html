@@ -18,43 +18,43 @@
       entries =>所有的 key-value 对拿出来    {key: 0, value: 12}, {key: 1, value: 5}, ...
       entry 实体
       */
-      let arr = [12, 5, 8, 99, 31]
+      let arr = [12, 5, 8, 99, 31];
       // includes: 数组是否包含某个东西
-      alert(arr.includes(8)) // true
+      alert(arr.includes(8)); // true
 
       // 下标(key)
       for (let i in arr) {
         // 0,1,2,3,4
-        alert(i)
+        alert(i);
       }
 
       // 值(value)
       for (let i of arr) {
         // 12,5,8,99,31
-        alert(i)
+        alert(i);
       }
 
       // keys=>所有的 key 拿出来
       for (let key of arr.keys()) {
         // 0,1,2,3,4
-        alert(key)
+        alert(key);
       }
 
       // values=>所有的 values 拿出来
       for (let value of arr.values()) {
         // 12,5,8,99,31
-        alert(value)
+        alert(value);
       }
 
       // entries=>所有的 key-value 对拿出来
       for (let entry of arr.entries()) {
         // {key: 0, value: 12}, {key: 1, value: 5}, ...
-        alert(entry)
+        alert(entry);
       }
 
       // entries=>所有的 key-value 对拿出来
       for (let [key, value] of arr.entries()) {
-        alert(`${key}=${value}`)
+        alert(`${key}=${value}`);
       }
     </script>
   </body>

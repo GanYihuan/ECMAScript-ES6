@@ -10,22 +10,20 @@
     <script>
       // generator
       function* show() {
-        alert('a')
+        alert("a");
         // 暂停
-        yield
-        alert('b')
+        yield;
+        alert("b");
       }
-
       function show_1() {
-        alert('a')
+        alert("a");
       }
       function show_2() {
-        alert('b')
+        alert("b");
       }
-
-      let genObj = show()
-      genObj.next() // 执行 show_1
-      genObj.next() // 执行 show_2
+      let genObj = show();
+      genObj.next(); // 执行 show_1
+      genObj.next(); // 执行 show_2
     </script>
   </body>
 </html>

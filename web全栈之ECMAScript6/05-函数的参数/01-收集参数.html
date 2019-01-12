@@ -9,17 +9,17 @@
   <body>
     <script>
       // Rest Parameter 必须是最后一个
-      // 下面错误, ...args不是最后一个
-      // function show(a, b, ...args, c) {
+      // 下面错误, ...args 不是最后一个
+      // function show(a, b, ...args, c) {}
       function show(a, b, ...args) {
         // 12
-        alert(a)
+        alert(a);
         // 15
-        alert(b)
+        alert(b);
         // 8, 9, 20, 21
-        alert(args)
+        alert(args);
       }
-      show(12, 15, 8, 9, 20, 21, 90)
+      show(12, 15, 8, 9, 20, 21, 90);
     </script>
   </body>
 </html>

@@ -10,27 +10,25 @@
     <script>
       class User {
         constructor(name) {
-          this.name = name
+          this.name = name;
         }
         showName() {
-          alert(this.name)
+          alert(this.name);
         }
       }
-
       class VipUser extends User {
         constructor(name, level) {
           // 执行父类方法
-          super(name)
-          this.level = level
+          super(name);
+          this.level = level;
         }
         showLevel() {
-          alert(this.level)
+          alert(this.level);
         }
       }
-
-      let v1 = new VipUser('blue', 3)
-      v1.showName()
-      v1.showLevel()
+      let v1 = new VipUser("blue", 3);
+      v1.showName();
+      v1.showLevel();
     </script>
   </body>
 </html>

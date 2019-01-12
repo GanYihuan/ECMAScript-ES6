@@ -9,26 +9,26 @@
   <body>
     <script>
       function User(name, pass) {
-        this.name = name
-        this.pass = pass
+        this.name = name;
+        this.pass = pass;
       }
       // 加方法
       User.prototype.showName = function() {
-        alert(this.name)
-      }
+        alert(this.name);
+      };
 
       function VipUser(name, pass, level) {
-        User.call(this, name, pass)
-        this.level = level
+        User.call(this, name, pass);
+        this.level = level;
       }
-      VipUser.prototype = new User()
-      VipUser.prototype.constructor = VipUser
+      VipUser.prototype = new User();
+      VipUser.prototype.constructor = VipUser;
       VipUser.prototype.showLevel = function() {
-        alert(this.level)
-      }
-      var v1 = new VipUser('blue', 3)
-      v1.showName()
-      v1.showLevel()
+        alert(this.level);
+      };
+      var v1 = new VipUser("blue", 3);
+      v1.showName();
+      v1.showLevel();
     </script>
   </body>
 </html>

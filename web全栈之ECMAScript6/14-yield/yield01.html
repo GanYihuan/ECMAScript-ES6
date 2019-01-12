@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>Document</title>
-	</head>
-	<body>
-		<script>
-			// function *炒菜(菜市场买回来的){
-			//   洗菜->洗好的菜
-			//   let 干净的菜 = yield 洗好的菜;
-			//   干净的菜->切->丝
-			//   let 切好的菜 = yield 丝;
-			//   切好的菜->炒->熟的菜
-			//   return 熟的菜;
-			// }
-			function* show(num1, num2) {
-				alert(`${num1}, ${num2}`)
-				alert('a')
-				let a = yield
-				alert(a) // 5
-				alert('b')
-				return
-			}
-			let gen = show(99, 88) // 99, 88
-			gen.next(12) // 第一个 next() 没法给 yield 传参
-			gen.next(5) // 5, 'b'
-		</script>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // function *炒菜(菜市场买回来的){
+      //   洗菜->洗好的菜
+      //   let 干净的菜 = yield 洗好的菜;
+      //   干净的菜->切->丝
+      //   let 切好的菜 = yield 丝;
+      //   切好的菜->炒->熟的菜
+      //   return 熟的菜;
+      // }
+      function* show(num1, num2) {
+        alert(`${num1}, ${num2}`);
+        alert("a");
+        let a = yield;
+        alert(a); // 5
+        alert("b");
+        return;
+      }
+      let gen = show(99, 88); // 99, 88
+      gen.next(12); // 第一个 next() 没法给 yield 传参
+      gen.next(5); // 5, 'b'
+    </script>
+  </body>
 </html>
