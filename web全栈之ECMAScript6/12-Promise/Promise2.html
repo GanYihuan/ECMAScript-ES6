@@ -10,27 +10,27 @@
     <script>
       Promise.all([
         $.ajax({
-          url: "data/arr.txt",
-          dataType: "json"
+          url: 'data/arr.txt',
+          dataType: 'json'
         }),
         $.ajax({
-          url: "data/json.txt",
-          dataType: "json"
+          url: 'data/json.txt',
+          dataType: 'json'
         }),
         $.ajax({
-          url: "data/num.txt",
-          dataType: "json"
+          url: 'data/num.txt',
+          dataType: 'json'
         })
       ]).then(
         results => {
-          let [arr, json, num] = results;
-          alert("成功了");
-          console.log(arr, json, num);
+          let [arr, json, num] = results
+          alert('成功了')
+          console.log(arr, json, num)
         },
         err => {
-          alert("失败了");
+          alert('失败了')
         }
-      );
+      )
     </script>
   </body>
 </html>

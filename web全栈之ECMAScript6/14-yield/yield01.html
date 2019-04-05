@@ -17,16 +17,16 @@
       //   return 熟的菜;
       // }
       function* show(num1, num2) {
-        alert(`${num1}, ${num2}`);
-        alert("a");
-        let a = yield;
-        alert(a); // 5
-        alert("b");
-        return;
+        alert(`${num1}, ${num2}`)
+        alert('a')
+        let a = yield
+        alert(a) // 5
+        alert('b')
+        return
       }
-      let gen = show(99, 88); // 99, 88
-      gen.next(12); // 第一个 next() 没法给 yield 传参
-      gen.next(5); // 5, 'b'
+      let gen = show(99, 88) // 99, 88
+      gen.next(12) // 第一个 next() 没法给 yield 传参
+      gen.next(5) // 5, 'b'
     </script>
   </body>
 </html>

@@ -12,14 +12,11 @@
       // 下面错误, ...args 不是最后一个
       // function show(a, b, ...args, c) {}
       function show(a, b, ...args) {
-        // 12
-        alert(a);
-        // 15
-        alert(b);
-        // 8, 9, 20, 21
-        alert(args);
+        alert(a) // 12
+        alert(b) // 15
+        alert(args) // 8, 9, 20, 21
       }
-      show(12, 15, 8, 9, 20, 21, 90);
+      show(12, 15, 8, 9, 20, 21, 90)
     </script>
   </body>
 </html>

@@ -13,30 +13,30 @@
         return new Promise(function(resolve, reject) {
           $.ajax({
             url,
-            dataType: "json",
+            dataType: 'json',
             success(arr) {
-              resolve(arr);
+              resolve(arr)
             },
             error(err) {
-              reject(err);
+              reject(err)
             }
-          });
-        });
+          })
+        })
       }
       Promise.all([
-        createPromise("data/arr.txt"),
-        createPromise("data/json.txt")
+        createPromise('data/arr.txt'),
+        createPromise('data/json.txt')
       ]).then(
         function(arr) {
-          let [res1, res2] = arr;
-          alert("全都成功了");
-          alert(res1);
-          alert(res2);
+          let [res1, res2] = arr
+          alert('全都成功了')
+          alert(res1)
+          alert(res2)
         },
         function() {
-          alert("至少有一个失败了");
+          alert('至少有一个失败了')
         }
-      );
+      )
     </script>
   </body>
 </html>
