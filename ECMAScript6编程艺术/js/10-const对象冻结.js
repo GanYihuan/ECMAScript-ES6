@@ -7,5 +7,5 @@ const person = Object.freeze({
 person.name = 'liSi'
 person.age = 30
 console.log(person.name) // zs
-console.log(person.age) // 30
-console.log(person) // obj
+console.log(person.age) // 20
+console.log(person) // { name: 'zs', age: '20' }

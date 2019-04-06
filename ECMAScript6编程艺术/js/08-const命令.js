@@ -1,4 +1,4 @@
-// const声明后不能去修改
+// const 声明后不能去修改
 const Pi = 3.1415
 console.log(Pi)
 // Pi = 3; // can 't change
