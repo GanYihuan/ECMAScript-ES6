@@ -1,1 +1,1 @@
-# web全栈之ECMAScript6
+# ES6
